@@ -16,6 +16,7 @@
 		67ECE61125FAA5E2009553DD /* FrameworksButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECE61025FAA5E2009553DD /* FrameworksButton.swift */; };
 		67ECE61425FAA8DB009553DD /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECE61325FAA8DB009553DD /* FrameworkGridViewModel.swift */; };
 		67ECE61725FAABE6009553DD /* FrameworkDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECE61625FAABE6009553DD /* FrameworkDismissButton.swift */; };
+		67ECE61B25FB3EC7009553DD /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECE61A25FB3EC7009553DD /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		67ECE61025FAA5E2009553DD /* FrameworksButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksButton.swift; sourceTree = "<group>"; };
 		67ECE61325FAA8DB009553DD /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		67ECE61625FAABE6009553DD /* FrameworkDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDismissButton.swift; sourceTree = "<group>"; };
+		67ECE61A25FB3EC7009553DD /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				67ECE60625FA9918009553DD /* Framework.swift */,
 				67ECE61025FAA5E2009553DD /* FrameworksButton.swift */,
 				67ECE61625FAABE6009553DD /* FrameworkDismissButton.swift */,
+				67ECE61A25FB3EC7009553DD /* SafariView.swift */,
 			);
 			path = "SwiftUI-AppleFrameworks";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				67ECE60B25FAA2A9009553DD /* FrameworkDetailView.swift in Sources */,
 				67ECE60725FA9918009553DD /* Framework.swift in Sources */,
 				67ECE61725FAABE6009553DD /* FrameworkDismissButton.swift in Sources */,
+				67ECE61B25FB3EC7009553DD /* SafariView.swift in Sources */,
 				67ECE5F725FA96EC009553DD /* SwiftUI_AppleFrameworksApp.swift in Sources */,
 				67ECE61125FAA5E2009553DD /* FrameworksButton.swift in Sources */,
 				67ECE61425FAA8DB009553DD /* FrameworkGridViewModel.swift in Sources */,

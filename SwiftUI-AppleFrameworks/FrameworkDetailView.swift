@@ -28,7 +28,9 @@ struct FrameworkDetailView: View {
             }
         }
         .sheet(isPresented: $isShowingSafariView, content: {
-            // present safariView
+            if let url = URL(string: framework.urlString) {
+                SafariView(url: url)
+            }
         })
     }
 }
