@@ -1,7 +1,7 @@
 # AppleFrameworks
 This app shows Apple frameworks with hardcoded data.
 
-## Main features:
+## Main features
 * LazyVGrid, new screens appear in a sheet ("Master" branch)
 * List, navigationLink used to present detail screen for each framework ("List" branch)
 * UIViewControllerRepresentable - SFSafariViewController
