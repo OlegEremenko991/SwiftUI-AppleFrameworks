@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct FrameworkGridView: View {
+struct FrameworkListView: View {
 
     // StateObject for new, ObservedObject for injected
-    @StateObject var viewModel = FrameworkGridViewModel()
+    @StateObject var viewModel = FrameworkListViewModel()
 
     var body: some View {
         NavigationView {
@@ -32,7 +32,7 @@ struct FrameworkGridView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkGridView()
+        FrameworkListView()
             .preferredColorScheme(.dark)
     }
 }
