@@ -14,23 +14,19 @@ struct FrameworkGridView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVGrid(columns: viewModel.columns) {
-                    ForEach(MockData.frameworks) { framework in
-                        FrameworkTitleView(framework: framework)
-                            .onTapGesture {
-                                viewModel.selectedFramework = framework
-                            }
-                    }
+            List {
+                ForEach(MockData.frameworks) { framework in
+                    NavigationLink(
+                        destination: FrameworkDetailView(isShowingDetailView: $viewModel.isShowingDetailView,
+                                                         framework: framework)) {
+                            FrameworkTitleView(framework: framework)
+                        }
                 }
             }
             .navigationTitle("🍎 Frameworks")
-            .sheet(isPresented: $viewModel.isShowingDetailView) {
-                FrameworkDetailView(isShowingDetailView: $viewModel.isShowingDetailView,
-                                    framework: viewModel.selectedFramework ?? MockData.sampleFramework)
-                
-            }
+            .padding(.top, 20)
         }
+        .accentColor(Color(.label)) // Setup color for back-button title
     }
 }
 
