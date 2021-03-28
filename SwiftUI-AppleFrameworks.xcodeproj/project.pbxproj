@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A6C5E92610CB9600FE701D /* FrameworkDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6C5E82610CB9600FE701D /* FrameworkDetailModel.swift */; };
 		67ECE5F725FA96EC009553DD /* SwiftUI_AppleFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECE5F625FA96EC009553DD /* SwiftUI_AppleFrameworksApp.swift */; };
 		67ECE5F925FA96EC009553DD /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECE5F825FA96EC009553DD /* FrameworkGridView.swift */; };
 		67ECE5FB25FA96ED009553DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67ECE5FA25FA96ED009553DD /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67A6C5E82610CB9600FE701D /* FrameworkDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailModel.swift; sourceTree = "<group>"; };
 		67ECE5F325FA96EC009553DD /* SwiftUI-AppleFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-AppleFrameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67ECE5F625FA96EC009553DD /* SwiftUI_AppleFrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppleFrameworksApp.swift; sourceTree = "<group>"; };
 		67ECE5F825FA96EC009553DD /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				67ECE60A25FAA2A9009553DD /* FrameworkDetailView.swift */,
+				67A6C5E82610CB9600FE701D /* FrameworkDetailModel.swift */,
 			);
 			path = FrameworkDetailView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				67ECE5F725FA96EC009553DD /* SwiftUI_AppleFrameworksApp.swift in Sources */,
 				67ECE61125FAA5E2009553DD /* FrameworksButton.swift in Sources */,
 				67ECE61425FAA8DB009553DD /* FrameworkGridViewModel.swift in Sources */,
+				67A6C5E92610CB9600FE701D /* FrameworkDetailModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

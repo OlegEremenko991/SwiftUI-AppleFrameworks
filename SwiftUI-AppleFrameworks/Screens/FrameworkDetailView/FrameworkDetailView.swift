@@ -8,37 +8,42 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    @Binding var isShowingDetailView: Bool
-    @State private var isShowingSafariView = false
-    var framework: Framework
+
+    @ObservedObject var viewModel: FrameworkDetailModel
 
     var body: some View {
         VStack {
-            FrameworkDismissButton(isShowingDetailView: $isShowingDetailView)
+            FrameworkDismissButton(isShowingDetailView: $viewModel.isShowingDetailView.wrappedValue)
             Spacer()
-            FrameworkTitleView(framework: framework)
-            Text(framework.description)
+            FrameworkTitleView(framework: viewModel.framework)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
             Spacer()
-            Button {
-                isShowingSafariView = true
-            } label: {
+
+            Link(destination: URL(string: viewModel.framework.urlString) ?? URL(string: "https://www.apple.com")!) {
                 FrameworksButton(title: "Learn more")
             }
+
+            // SafariView for opening links
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+//                FrameworksButton(title: "Learn more")
+//            }
         }
-        .sheet(isPresented: $isShowingSafariView, content: {
-            if let url = URL(string: framework.urlString) {
-                SafariView(url: url)
-            }
-        })
+            // SafariView for opening links
+//        .sheet(isPresented: $viewModel.isShowingSafariView) {
+//            SafariView(url: URL(string: viewModel.framework.urlString)
+//                         ?? URL(string: "https://www.apple.com")!)
+//        }
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailView(isShowingDetailView: .constant(false),
-                            framework: MockData.sampleFramework)
+        FrameworkDetailView(viewModel: FrameworkDetailModel(framework: MockData.sampleFramework,
+                                                            isShowingDetailView: .constant(false)))
             .preferredColorScheme(.dark)
     }
 }
